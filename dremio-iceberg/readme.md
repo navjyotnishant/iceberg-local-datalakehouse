@@ -41,13 +41,13 @@ This document provides a step-by-step guide to set up a Proof of Concept (POC) e
 
     ```sh
     git clone https://github.com/navjyotnishant/iceberg-local-datalakehouse.git
-    cd iceberg-local-datalakehouse
+    cd iceberg-local-datalakehouse/dremio-iceberg
     ```
 
 2. **Apply the Kubernetes manifests:**
 
     ```sh
-    kubectl apply -f k8s/
+    kubectl apply -f k3d/
     ```
 
 3. **Verify the deployment:**
