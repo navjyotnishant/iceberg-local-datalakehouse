@@ -63,10 +63,6 @@ This document provides a step-by-step guide to set up a Proof of Concept (POC) e
         kubectl port-forward service/nessie -n iceberg-poc 30020:19120 --address 0.0.0.0 &
         kubectl port-forward service/minio -n iceberg-poc 30001:9001 --address 0.0.0.0 &
         kubectl port-forward service/dremio -n iceberg-poc 30047:9047 --address 0.0.0.0 &
-
-        kubectl port-forward service/spark -n iceberg-poc 30080:8080 --address 0.0.0.0 &
-        kubectl port-forward service/spark -n iceberg-poc 30082:4040 --address 0.0.0.0 &
-        kubectl port-forward service/spark -n iceberg-poc 30084:8888 --address 0.0.0.0 &
         ```
 
 5. **Access the UIs:**
@@ -74,10 +70,6 @@ This document provides a step-by-step guide to set up a Proof of Concept (POC) e
         - **Nessie UI:** Open your browser and navigate to `http://localhost:30020`.
         - **MinIO UI:** Open your browser and navigate to `http://localhost:30001`.
         - **Dremio UI:** Open your browser and navigate to `http://localhost:30047`.
-        - **Jupyter-Notebook** Open your browser and navigate to `http://localhost:30084`.
-        - **Master-web-ui** Open your browser and navigate to `http://localhost:30080`.
-        - **Spark-job-ui** Open your browser and navigate to `http://localhost:30082`.
-
 
 ## Setup Dremio
 
